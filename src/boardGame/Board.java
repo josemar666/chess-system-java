@@ -28,6 +28,11 @@ public class Board {
     public void setColumns(Integer columns) {
         this.columns = columns;
     }
-    
+    public Pierce piece(Integer rows , Integer columns){
+        return pieces[rows][columns];
+    }
+    public Pierce piece(Position position){
+        return pieces[position.getRow()][position.getColumn()];
+    }
  
 }

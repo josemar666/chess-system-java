@@ -7,12 +7,14 @@ package apliccation;
 
 import boardGame.Board;
 import boardGame.Position;
+import chess.ChessMatch;
 
 
 public class Program {
     public static void main (String[] args){
         
-       Board tabuleiro = new Board(4,4);
+      ChessMatch match = new ChessMatch();
+      UI.printBoard(match.getPierces());
         
     }
     

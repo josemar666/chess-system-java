@@ -2,32 +2,32 @@
 package boardGame;
 
 public class Position {
-    private  Integer row;
-    private  Integer column;
+    private  Integer rows;
+    private  Integer columns;
 
-    public Position(Integer row, Integer column) {
-        this.row = row;
-        this.column = column;
+    public Position(Integer rows, Integer columns) {
+        this.rows = rows;
+        this.columns = columns;
     }
 
     public Integer getRow() {
-        return row;
+        return rows;
     }
 
-    public void setRow(Integer row) {
-        this.row = row;
+    public void setRow(Integer rows) {
+        this.rows = rows;
     }
 
     public Integer getColumn() {
-        return column;
+        return columns;
     }
 
     public void setColumn(Integer column) {
-        this.column = column;
+        this.columns = columns;
     }
     @Override
     public String toString(){
-        return row + "," + column;
+        return rows + "," + columns;
     }
     public void setValues(Integer row ,Integer column){
         
